@@ -1,103 +1,542 @@
-import Image from "next/image";
+import { Button } from "@/components/ui/button"
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
+import { Badge } from "@/components/ui/badge"
+import {
+  Briefcase,
+  Code,
+  GraduationCap,
+  Award,
+  Languages,
+  ChevronRight,
+  Github,
+  Linkedin,
+  Mail,
+  ArrowUpRight,
+  SquareTerminal
+} from "lucide-react"
+import Link from "next/link"
+import Image from "next/image"
+import {
+  SiAmazondynamodb,
+  SiHtml5,
+  SiCss,
+  SiJavascript,
+  SiTypescript,
+  SiReact,
+  SiNextdotjs,
+  SiTailwindcss,
+  SiNodedotjs,
+  SiAmazonapigateway,
+  SiPostgresql,
+  SiMongodb,
+  SiApachecassandra,
+  SiUnrealengine,
+  SiDotnet,
+  SiUnity,
+  SiElectron,
+  SiGit,
+  SiGithub,
+  SiDocker,
+  SiPerforce,
+  SiLinux,
+  SiUbuntu,
+  SiTerraform,
+  SiAmazonwebservices,
+  SiAwslambda,
+  SiPython,
+  SiC,
+  SiCplusplus,
+  SiKotlin,
+  SiSharp, SiAndroid
+} from '@icons-pack/react-simple-icons';
+
+const experiences = [
+  {
+    role: "XR Technical Artist",
+    company: "Applied Medical",
+    period: "Sept 2021 - Jan 2025",
+    responsibilities: [
+      "Leading a small team of developers to create VR training simulations powered by Unreal Engine",
+      "Created and deployed core infrastructure to a VR training environment with C++ and Blueprints",
+      "Responsible for creating each training scenario and making sure it is true to reality with 95% accuracy",
+      "Built desktop/CLI tools in Typescript that's used for video tagging and archival",
+      "Established the version control system using Perforce"
+    ],
+  },
+]
+
+const projects = [
+  {
+    title: "Kuraiji.me - E-commerce Platform",
+    description: "A full-featured online shopping platform",
+    image: "/shopping.png",
+    technologies: ["React", "Next.js", "Tailwind CSS", "AWS Gateway", "AWS Lambda", "Amazon DynamoDB"],
+    demoLink: "https://www.kuraiji.me/",
+    codeLink: "https://github.com/kuraiji/crud-website",
+  },
+  {
+    title: "Speedy Playlist Creator for Android",
+    description: "A speedy way to create playlists for your local music files.",
+    image: "/music.png",
+    technologies: ["Kotlin", "Android"],
+    codeLink: "https://github.com/kuraiji/speedyplaylistcreatorandroid",
+  },
+  {
+    title: "Ice Mage Adventures",
+    description: "A game about a young wizard's apprentice completing his training. This young apprentice must survive 15 tests, as well as defeat his master in magical combat before he is considered a true master of the arcane. Are you up to the task?",
+    image: "/icemage.png",
+    technologies: ["GDScript"],
+    demoLink: "https://tripletrouble.itch.io/ice-mage-adventures",
+    codeLink: "https://github.com/kuraiji/Triple-Trouble-LD41"
+  },
+]
+
+const skillCategories = [
+  {
+    name: "Full Stack Development",
+    skills: [
+      ["HTML", <SiHtml5/>],
+      ["CSS", <SiCss/>],
+      ["React", <SiReact/>],
+      ["Next.js", <SiNextdotjs/>],
+      ["Tailwind CSS", <SiTailwindcss/>],
+      ["Responsive Design"],
+      ["Node.js", <SiNodedotjs/>],
+      ["RESTful APIs", <SiAmazonapigateway/>],
+      ["Amazon DynamoDB", <SiAmazondynamodb/>],
+      ["PostgreSQL", <SiPostgresql/>],
+      ["MongoDB", <SiMongodb/>],
+      ["Apache Cassandra", <SiApachecassandra/>],
+    ],
+  },
+  {
+    name: "Software and Video Game Development",
+    skills: [
+      ["Unreal Engine", <SiUnrealengine/>],
+      ["ASP.Net Core", <SiDotnet/>],
+      ["Unity", <SiUnity/>],
+      ["CLI Tooling", <SquareTerminal/>],
+      ["Electron", <SiElectron/>],
+      ["Android", <SiAndroid/>],
+    ],
+  },
+  {
+    name: "DevOps, Cloud & Tools",
+    skills: [
+      ["Git", <SiGit/>],
+      ["GitHub", <SiGithub/>],
+      ["CI/CD"],
+      ["Docker", <SiDocker/>],
+      ["Perforce", <SiPerforce/>],
+      ["Linux Server", <SiLinux/>],
+      ["Ubuntu Server", <SiUbuntu/>],
+      ["Terraform", <SiTerraform/>],
+      ["Amazon Web Services", <SiAmazonwebservices/>],
+      ["AWS Lambda", <SiAwslambda/>],
+      ["Cloud Architecture"],
+      ["Cloud Infrastructure"]
+    ],
+  },
+
+]
+
+const education = [
+  {
+    degree: "Bachelor of Sciences in Computer Science",
+    institution: "University of California, Irvine",
+    //period: "2019 - 2021",
+    description:
+        "Coursework included Data Structures, Algorithms, Database Systems, and Object-Oriented Programming.",
+  },
+]
+
+const certificates = [
+  {
+    name: "AWS Certified Solutions Architect – Associate",
+    issuer: "Amazon Web Services",
+    date: "2025",
+    description: "Earners of this certification have a comprehensive understanding of AWS services and technologies. They demonstrated the ability to build secure and robust solutions using architectural design principles based on customer requirements. Badge owners are able to strategically design well-architected distributed systems that are scalable, resilient, efficient, and fault-tolerant.",
+    credentialLink: "https://www.credly.com/badges/73699102-0cdf-4bb4-859b-72cf8ddc6a7a",
+  },
+]
+
+const spokenLanguages = [
+  { name: "English", proficiency: "Native" },
+  { name: "Japanese", proficiency: "Fluent" },
+]
+
+const programmingLanguages = [
+  ["JavaScript", <SiJavascript/>],
+  ["TypeScript", <SiTypescript/>],
+  ["Python", <SiPython/>],
+  ["SQL"],
+  ["C#", <SiSharp/>],
+  ["C++", <SiCplusplus/>],
+  ["C", <SiC/>],
+  ["Kotlin", <SiKotlin/>],
+  ]
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+      <div className="min-h-screen bg-background">
+        {/* Header/Navigation */}
+        <header className="sticky top-0 z-40 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+          <div className="container flex h-16 items-center justify-between">
+            <div className="font-bold text-xl">Payman Ahmadpour</div>
+            <nav className="hidden md:flex gap-6">
+              <a href="#experience" className="text-sm font-medium hover:text-primary transition-colors">
+                Experience
+              </a>
+              <a href="#projects" className="text-sm font-medium hover:text-primary transition-colors">
+                Projects
+              </a>
+              <a href="#languages" className="text-sm font-medium hover:text-primary transition-colors">
+                Languages
+              </a>
+              <a href="#skills" className="text-sm font-medium hover:text-primary transition-colors">
+                Skills
+              </a>
+              <a href="#education" className="text-sm font-medium hover:text-primary transition-colors">
+                Education
+              </a>
+              <a href="#certificates" className="text-sm font-medium hover:text-primary transition-colors">
+                Certificates
+              </a>
+            </nav>
+            <div className="flex items-center gap-4">
+              <a href="https://github.com/kuraiji" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                <Github className="h-5 w-5" />
+              </a>
+              <a href="https://www.linkedin.com/in/paymanahmadpour" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                <Linkedin className="h-5 w-5" />
+              </a>
+              <a href="mailto:paymanahmadpour@outlook.com" aria-label="Email">
+                <Mail className="h-5 w-5" />
+              </a>
+              <Button size="sm" className="hidden md:flex">
+                Download CV
+              </Button>
+            </div>
+          </div>
+        </header>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
-  );
+        <main className="container py-10">
+          {/* Hero Section */}
+          <section className="py-12 md:py-24 lg:py-32 flex flex-col md:flex-row items-center gap-8 md:gap-16">
+            <div className="flex-1 space-y-4">
+              <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl">Hi, I'm Payman Ahmadpour</h1>
+              <p className="text-xl text-muted-foreground">
+                As a seasoned Full Stack and Software Developer with over three years of experience across various platforms, including desktop, mobile, web, and VR, I am now focused on transitioning into cloud infrastructure and development. My diverse background and problem-solving skills position me well to tackle new challenges in this evolving field.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-3 pt-4">
+                <Button asChild>
+                  <a href="#contact">Contact Me</a>
+                </Button>
+                <Button variant="outline" asChild>
+                  <a href="#projects">View Projects</a>
+                </Button>
+              </div>
+            </div>
+            <div className="flex-1 flex justify-center md:justify-end">
+              <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-primary/20">
+                <Image
+                    src="/me.jpg"
+                    alt="Payman Ahmadpour"
+                    fill
+                    className="object-cover"
+                    priority
+                />
+              </div>
+            </div>
+          </section>
+
+          {/* Experience Section */}
+          <section id="experience" className="py-12 scroll-mt-20">
+            <div className="flex items-center gap-2 mb-8">
+              <Briefcase className="h-6 w-6 text-primary" />
+              <h2 className="text-3xl font-bold tracking-tight">Experience</h2>
+            </div>
+            <div className="space-y-8">
+              {experiences.map((experience, index) => (
+                  <Card key={index}>
+                    <CardHeader>
+                      <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-2">
+                        <div>
+                          <CardTitle>{experience.role}</CardTitle>
+                          <CardDescription className="text-base">{experience.company}</CardDescription>
+                        </div>
+                        <Badge variant="outline" className="w-fit">
+                          {experience.period}
+                        </Badge>
+                      </div>
+                    </CardHeader>
+                    <CardContent>
+                      <ul className="list-disc pl-5 space-y-2">
+                        {experience.responsibilities.map((responsibility, idx) => (
+                            <li key={idx}>{responsibility}</li>
+                        ))}
+                      </ul>
+                    </CardContent>
+                  </Card>
+              ))}
+            </div>
+          </section>
+
+          {/* Projects Section */}
+          <section id="projects" className="py-12 scroll-mt-20">
+            <div className="flex items-center gap-2 mb-8">
+              <Code className="h-6 w-6 text-primary" />
+              <h2 className="text-3xl font-bold tracking-tight">Projects</h2>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {projects.map((project, index) => (
+                  <Card key={index} className="overflow-hidden flex flex-col h-full">
+                    <div className="relative h-48 w-full">
+                      <Image src={project.image || "/placeholder.svg"} alt={project.title} fill className="object-cover" />
+                    </div>
+                    <CardHeader>
+                      <CardTitle>{project.title}</CardTitle>
+                      <CardDescription>{project.description}</CardDescription>
+                    </CardHeader>
+                    <CardContent className="flex-grow">
+                      <div className="flex flex-wrap gap-2 mb-4">
+                        {project.technologies.map((tech, idx) => (
+                            <Badge key={idx} variant="secondary">
+                              {tech}
+                            </Badge>
+                        ))}
+                      </div>
+                    </CardContent>
+                    <div className="p-6 pt-0 mt-auto">
+                      <div className="flex gap-4">
+                        {project.demoLink && (
+                            <Button variant="outline" size="sm" asChild>
+                              <a
+                                  href={project.demoLink}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className="flex items-center gap-1"
+                              >
+                                Demo <ArrowUpRight className="h-4 w-4" />
+                              </a>
+                            </Button>
+                        )}
+                        {project.codeLink && (
+                            <Button variant="outline" size="sm" asChild>
+                              <a
+                                  href={project.codeLink}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className="flex items-center gap-1"
+                              >
+                                Code <Github className="h-4 w-4" />
+                              </a>
+                            </Button>
+                        )}
+                      </div>
+                    </div>
+                  </Card>
+              ))}
+            </div>
+          </section>
+
+          {/* Languages Section */}
+          <section id="languages" className="py-12 scroll-mt-20">
+            <div className="flex items-center gap-2 mb-8">
+              <Languages className="h-6 w-6 text-primary" />
+              <h2 className="text-3xl font-bold tracking-tight">Languages</h2>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <Card>
+                <CardHeader>
+                  <CardTitle>Spoken Languages</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <ul className="space-y-2">
+                    {spokenLanguages.map((language, index) => (
+                        <li key={index} className="flex justify-between items-center">
+                          <span>{language.name}</span>
+                          <Badge variant="outline">{language.proficiency}</Badge>
+                        </li>
+                    ))}
+                  </ul>
+                </CardContent>
+              </Card>
+              <Card>
+                <CardHeader>
+                  <CardTitle>Programming Languages</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <div className="flex flex-wrap gap-2">
+                    {programmingLanguages.map((language, index) => (
+                        <Badge key={index} className="px-3 py-1">
+                          <>
+                            {language[0]}
+                            {language[1]}
+                          </>
+                        </Badge>
+                    ))}
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+          </section>
+
+          {/* Skills Section */}
+          <section id="skills" className="py-12 scroll-mt-20">
+            <div className="flex items-center gap-2 mb-8">
+              <Code className="h-6 w-6 text-primary" />
+              <h2 className="text-3xl font-bold tracking-tight">Skills</h2>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              {skillCategories.map((category, index) => (
+                  <Card key={index}>
+                    <CardHeader>
+                      <CardTitle>{category.name}</CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <div className="flex flex-wrap gap-2">
+                        {category.skills.map((skill, idx) => (
+                            <Badge key={idx} className="px-3 py-1">
+                              <>
+                                {skill[0]}
+                                {skill[1]}
+                              </>
+                            </Badge>
+                        ))}
+                      </div>
+                    </CardContent>
+                  </Card>
+              ))}
+            </div>
+          </section>
+
+          {/* Education Section */}
+          <section id="education" className="py-12 scroll-mt-20">
+            <div className="flex items-center gap-2 mb-8">
+              <GraduationCap className="h-6 w-6 text-primary" />
+              <h2 className="text-3xl font-bold tracking-tight">Education</h2>
+            </div>
+            <div className="space-y-6">
+              {education.map((edu, index) => (
+                  <Card key={index}>
+                    <CardHeader>
+                      <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-2">
+                        <div>
+                          <CardTitle>{edu.degree}</CardTitle>
+                          <CardDescription className="text-base">{edu.institution}</CardDescription>
+                        </div>
+                        {/*<Badge variant="outline" className="w-fit">
+                          {edu.period}
+                        </Badge>*/}
+                      </div>
+                    </CardHeader>
+                    <CardContent>
+                      <p>{edu.description}</p>
+                    </CardContent>
+                  </Card>
+              ))}
+            </div>
+          </section>
+
+          {/* Certificates Section */}
+          <section id="certificates" className="py-12 scroll-mt-20">
+            <div className="flex items-center gap-2 mb-8">
+              <Award className="h-6 w-6 text-primary" />
+              <h2 className="text-3xl font-bold tracking-tight">Certificates</h2>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {certificates.map((certificate, index) => (
+                  <Card key={index}>
+                    <CardHeader>
+                      <CardTitle>{certificate.name}</CardTitle>
+                      <CardDescription>
+                        {certificate.issuer} • {certificate.date}
+                      </CardDescription>
+                    </CardHeader>
+                    <CardContent>
+                      <p>{certificate.description}</p>
+                      {certificate.credentialLink && (
+                          <Link
+                              href={certificate.credentialLink}
+                              className="inline-flex items-center text-primary mt-2 hover:underline"
+                              target="_blank"
+                          >
+                            View Credential <ChevronRight className="h-4 w-4" />
+                          </Link>
+                      )}
+                    </CardContent>
+                  </Card>
+              ))}
+            </div>
+          </section>
+
+          {/* Contact Section */}
+          <section id="contact" className="py-12 scroll-mt-20">
+            <Card>
+              <CardHeader>
+                <CardTitle className="text-2xl">Get In Touch</CardTitle>
+                <CardDescription>
+                  Feel free to reach out if you're looking for a developer, have a question, or just want to connect.
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="flex flex-col md:flex-row gap-6 items-center">
+                  <div className="space-y-4 flex-1">
+                    <div className="flex items-center gap-2">
+                      <Mail className="h-5 w-5 text-primary" />
+                      <a href="mailto:paymanahmadpour@outlook.com" className="hover:underline">
+                        paymanahmadpour@outlook.com
+                      </a>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <Linkedin className="h-5 w-5 text-primary" />
+                      <a
+                          href="https://linkedin.com/in/paymanahmadpour"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="hover:underline"
+                      >
+                        linkedin.com/in/paymanahmadpour
+                      </a>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <Github className="h-5 w-5 text-primary" />
+                      <a
+                          href="https://github.com/kuraiji"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="hover:underline"
+                      >
+                        github.com/kuraiji
+                      </a>
+                    </div>
+                  </div>
+                  <div className="flex-1">
+                    <Button className="w-full">Download Resume</Button>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </section>
+        </main>
+
+        <footer className="border-t py-6">
+          <div className="container flex flex-col md:flex-row items-center justify-between gap-4">
+            <p className="text-sm text-muted-foreground">© {new Date().getFullYear()} Payman Ahmadpour. All rights reserved.</p>
+            <div className="flex items-center gap-4">
+              <a href="https://github.com/kuraiji" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                <Github className="h-5 w-5" />
+              </a>
+              <a href="https://linkedin.com/in/paymanahmadpour" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                <Linkedin className="h-5 w-5" />
+              </a>
+              <a href="mailto:paymanahmadpour@outlook.com" aria-label="Email">
+                <Mail className="h-5 w-5" />
+              </a>
+            </div>
+          </div>
+        </footer>
+      </div>
+  )
 }
