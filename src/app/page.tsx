@@ -95,44 +95,44 @@ const skillCategories = [
   {
     name: "Full Stack Development",
     skills: [
-      ["HTML", <SiHtml5/>],
-      ["CSS", <SiCss/>],
-      ["React", <SiReact/>],
-      ["Next.js", <SiNextdotjs/>],
-      ["Tailwind CSS", <SiTailwindcss/>],
+      ["HTML", <SiHtml5 key={"HTML"}/>],
+      ["CSS", <SiCss key={"CSS"}/>],
+      ["React", <SiReact key={"REACT"}/>],
+      ["Next.js", <SiNextdotjs key={"NEXT"}/>],
+      ["Tailwind CSS", <SiTailwindcss key={"TAIL"}/>],
       ["Responsive Design"],
-      ["Node.js", <SiNodedotjs/>],
-      ["RESTful APIs", <SiAmazonapigateway/>],
-      ["Amazon DynamoDB", <SiAmazondynamodb/>],
-      ["PostgreSQL", <SiPostgresql/>],
-      ["MongoDB", <SiMongodb/>],
-      ["Apache Cassandra", <SiApachecassandra/>],
+      ["Node.js", <SiNodedotjs key={"NODE"}/>],
+      ["RESTful APIs", <SiAmazonapigateway key={"API"}/>],
+      ["Amazon DynamoDB", <SiAmazondynamodb key={"AmazonDynamoDB"}/>],
+      ["PostgreSQL", <SiPostgresql key={"PostgreSQL"}/>],
+      ["MongoDB", <SiMongodb key={"MongoDB"}/>],
+      ["Apache Cassandra", <SiApachecassandra key={"ApacheCassandra"}/>],
     ],
   },
   {
     name: "Software and Video Game Development",
     skills: [
-      ["Unreal Engine", <SiUnrealengine/>],
-      ["ASP.Net Core", <SiDotnet/>],
-      ["Unity", <SiUnity/>],
-      ["CLI Tooling", <SquareTerminal/>],
-      ["Electron", <SiElectron/>],
-      ["Android", <SiAndroid/>],
+      ["Unreal Engine", <SiUnrealengine key={"Unreal Engine"}/>],
+      ["ASP.Net Core", <SiDotnet key={"ASP.Net Core"}/>],
+      ["Unity", <SiUnity key={"Unity"}/>],
+      ["CLI Tooling", <SquareTerminal key={"CLI Tooling"}/>],
+      ["Electron", <SiElectron key={"Electron"}/>],
+      ["Android", <SiAndroid key={"Android"}/>],
     ],
   },
   {
     name: "DevOps, Cloud & Tools",
     skills: [
-      ["Git", <SiGit/>],
-      ["GitHub", <SiGithub/>],
+      ["Git", <SiGit key={"Git"}/>],
+      ["GitHub", <SiGithub key={"GitHub"}/>],
       ["CI/CD"],
-      ["Docker", <SiDocker/>],
-      ["Perforce", <SiPerforce/>],
-      ["Linux Server", <SiLinux/>],
-      ["Ubuntu Server", <SiUbuntu/>],
-      ["Terraform", <SiTerraform/>],
-      ["Amazon Web Services", <SiAmazonwebservices/>],
-      ["AWS Lambda", <SiAwslambda/>],
+      ["Docker", <SiDocker key={"Docker"}/>],
+      ["Perforce", <SiPerforce key={"Perforce"}/>],
+      ["Linux Server", <SiLinux key={"Linux"}/>],
+      ["Ubuntu Server", <SiUbuntu key={"Ubuntu"}/>],
+      ["Terraform", <SiTerraform key={"Terraform"}/>],
+      ["Amazon Web Services", <SiAmazonwebservices key={"AmazonWebServices"}/>],
+      ["AWS Lambda", <SiAwslambda key={"AWS Lambda"}/>],
       ["Cloud Architecture"],
       ["Cloud Infrastructure"]
     ],
@@ -166,14 +166,14 @@ const spokenLanguages = [
 ]
 
 const programmingLanguages = [
-  ["JavaScript", <SiJavascript/>],
-  ["TypeScript", <SiTypescript/>],
-  ["Python", <SiPython/>],
+  ["JavaScript", <SiJavascript key={"JavaScript"}/>],
+  ["TypeScript", <SiTypescript key={"TypeScript"}/>],
+  ["Python", <SiPython key={"Python"}/>],
   ["SQL"],
-  ["C#", <SiSharp/>],
-  ["C++", <SiCplusplus/>],
-  ["C", <SiC/>],
-  ["Kotlin", <SiKotlin/>],
+  ["C#", <SiSharp key={"C#"}/>],
+  ["C++", <SiCplusplus key={"C++"}/>],
+  ["C", <SiC key={"C"}/>],
+  ["Kotlin", <SiKotlin key={"Kotlin"}/>],
   ]
 
 export default function Home() {
@@ -224,7 +224,7 @@ export default function Home() {
           {/* Hero Section */}
           <section className="py-12 md:py-24 lg:py-32 flex flex-col md:flex-row items-center gap-8 md:gap-16">
             <div className="flex-1 space-y-4">
-              <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl">Hi, I'm Payman Ahmadpour</h1>
+              <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl">Hi, I&apos;m Payman Ahmadpour</h1>
               <p className="text-xl text-muted-foreground">
                 As a seasoned Full Stack and Software Developer with over three years of experience across various platforms, including desktop, mobile, web, and VR, I am now focused on transitioning into cloud infrastructure and development. My diverse background and problem-solving skills position me well to tackle new challenges in this evolving field.
               </p>
@@ -477,7 +477,7 @@ export default function Home() {
               <CardHeader>
                 <CardTitle className="text-2xl">Get In Touch</CardTitle>
                 <CardDescription>
-                  Feel free to reach out if you're looking for a developer, have a question, or just want to connect.
+                  Feel free to reach out if you&apos;re looking for a developer, have a question, or just want to connect.
                 </CardDescription>
               </CardHeader>
               <CardContent>
