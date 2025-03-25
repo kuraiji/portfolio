@@ -185,11 +185,11 @@ const programmingLanguages = [
 
 export default function Home() {
   return (
-      <div className="min-h-screen bg-background">
+      <div className="min-h-screen min-w-screen flex flex-col justify-center items-center bg-background">
         {/* Header/Navigation */}
-        <header className="sticky top-0 z-40 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-          <div className="container flex h-16 items-center justify-between">
-            <div className="font-bold text-xl">Payman Ahmadpour</div>
+        <header className="sticky top-0 z-40 w-full flex justify-center border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+          <div className="container flex flex-row h-16 items-center justify-between min-w-full">
+            <div className="font-bold text-xl ml-4">Payman Ahmadpour</div>
             <nav className="hidden md:flex gap-6">
               <a href="#experience" className="text-sm font-medium hover:text-primary transition-colors">
                 Experience
@@ -209,8 +209,11 @@ export default function Home() {
               <a href="#certificates" className="text-sm font-medium hover:text-primary transition-colors">
                 Certificates
               </a>
+              <Link href="./jp" className="text-sm font-medium hover:text-primary transition-colors">
+                日本語へ
+              </Link>
             </nav>
-            <div className="flex items-center gap-4">
+            <div className="flex items-center gap-4 mr-4">
               <a href="https://github.com/kuraiji" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                 <Github className="h-5 w-5" />
               </a>
