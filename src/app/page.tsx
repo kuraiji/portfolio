@@ -69,7 +69,7 @@ const projects = [
   {
     title: "Kuraiji.me - E-commerce Platform",
     description: "A full-featured online shopping platform",
-    image: "/shopping.png",
+    image: "./shopping.png",
     technologies: ["React", "Next.js", "Tailwind CSS", "AWS Gateway", "AWS Lambda", "Amazon DynamoDB"],
     demoLink: "https://www.kuraiji.me/",
     codeLink: "https://github.com/kuraiji/crud-website",
@@ -77,14 +77,14 @@ const projects = [
   {
     title: "Speedy Playlist Creator for Android",
     description: "A speedy way to create playlists for your local music files.",
-    image: "/music.png",
+    image: "./music.png",
     technologies: ["Kotlin", "Android"],
     codeLink: "https://github.com/kuraiji/speedyplaylistcreatorandroid",
   },
   {
     title: "Ice Mage Adventures",
     description: "A game about a young wizard's apprentice completing his training. This young apprentice must survive 15 tests, as well as defeat his master in magical combat before he is considered a true master of the arcane. Are you up to the task?",
-    image: "/icemage.png",
+    image: "./icemage.png",
     technologies: ["GDScript"],
     demoLink: "https://tripletrouble.itch.io/ice-mage-adventures",
     codeLink: "https://github.com/kuraiji/Triple-Trouble-LD41"
@@ -240,7 +240,7 @@ export default function Home() {
             <div className="flex-1 flex justify-center md:justify-end">
               <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-primary/20">
                 <Image
-                    src="/me.jpg"
+                    src="./me.jpg"
                     alt="Payman Ahmadpour"
                     fill
                     className="object-cover"
