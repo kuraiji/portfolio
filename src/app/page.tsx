@@ -49,6 +49,12 @@ import {
   SiKotlin,
   SiSharp, SiAndroid
 } from '@icons-pack/react-simple-icons';
+import type {Metadata} from "next";
+
+export const metadata: Metadata = {
+  title: "Portfolio - Payman Ahmadpour",
+  description: "Portfolio website created by Payman Ahmadpour",
+};
 
 const experiences = [
   {
@@ -121,8 +127,9 @@ const skillCategories = [
     ],
   },
   {
-    name: "DevOps, Cloud & Tools",
+    name: "DevOps, Cloud & Others",
     skills: [
+      ["Leadership"],
       ["Git", <SiGit key={"Git"}/>],
       ["GitHub", <SiGithub key={"GitHub"}/>],
       ["CI/CD"],
@@ -213,20 +220,21 @@ export default function Home() {
               <a href="mailto:paymanahmadpour@outlook.com" aria-label="Email">
                 <Mail className="h-5 w-5" />
               </a>
-              <Button size="sm" className="hidden md:flex">
-                Download CV
-              </Button>
+              <Link href="./Ahmadpour-Resume_CV.pdf">
+                <Button size="sm" className="hidden md:flex">
+                  Download CV
+                </Button>
+              </Link>
             </div>
           </div>
         </header>
-
         <main className="container py-10">
           {/* Hero Section */}
           <section className="py-12 md:py-24 lg:py-32 flex flex-col md:flex-row items-center gap-8 md:gap-16">
             <div className="flex-1 space-y-4">
               <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl">Hi, I&apos;m Payman Ahmadpour</h1>
               <p className="text-xl text-muted-foreground">
-                As a seasoned Full Stack and Software Developer with over three years of experience across various platforms, including desktop, mobile, web, and VR, I am now focused on transitioning into cloud infrastructure and development. My diverse background and problem-solving skills position me well to tackle new challenges in this evolving field.
+                As a seasoned Full Stack and Software Developer with over three years of experience across various platforms, including desktop, mobile, web, and VR. I am now focused on transitioning into cloud infrastructure and development. My diverse background and problem-solving skills position me well to tackle new challenges in this evolving field.
               </p>
               <div className="flex flex-col sm:flex-row gap-3 pt-4">
                 <Button asChild>
@@ -249,7 +257,6 @@ export default function Home() {
               </div>
             </div>
           </section>
-
           {/* Experience Section */}
           <section id="experience" className="py-12 scroll-mt-20">
             <div className="flex items-center gap-2 mb-8">
@@ -281,7 +288,6 @@ export default function Home() {
               ))}
             </div>
           </section>
-
           {/* Projects Section */}
           <section id="projects" className="py-12 scroll-mt-20">
             <div className="flex items-center gap-2 mb-8">
@@ -339,7 +345,6 @@ export default function Home() {
               ))}
             </div>
           </section>
-
           {/* Languages Section */}
           <section id="languages" className="py-12 scroll-mt-20">
             <div className="flex items-center gap-2 mb-8">
@@ -381,7 +386,6 @@ export default function Home() {
               </Card>
             </div>
           </section>
-
           {/* Skills Section */}
           <section id="skills" className="py-12 scroll-mt-20">
             <div className="flex items-center gap-2 mb-8">
@@ -410,7 +414,6 @@ export default function Home() {
               ))}
             </div>
           </section>
-
           {/* Education Section */}
           <section id="education" className="py-12 scroll-mt-20">
             <div className="flex items-center gap-2 mb-8">
@@ -438,7 +441,6 @@ export default function Home() {
               ))}
             </div>
           </section>
-
           {/* Certificates Section */}
           <section id="certificates" className="py-12 scroll-mt-20">
             <div className="flex items-center gap-2 mb-8">
@@ -470,7 +472,6 @@ export default function Home() {
               ))}
             </div>
           </section>
-
           {/* Contact Section */}
           <section id="contact" className="py-12 scroll-mt-20">
             <Card>
@@ -513,14 +514,17 @@ export default function Home() {
                     </div>
                   </div>
                   <div className="flex-1">
-                    <Button className="w-full">Download Resume</Button>
+                    <Link href="./Ahmadpour-Resume_CV.pdf">
+                      <Button className="w-full">
+                        Download Resume
+                      </Button>
+                    </Link>
                   </div>
                 </div>
               </CardContent>
             </Card>
           </section>
         </main>
-
         <footer className="border-t py-6">
           <div className="container flex flex-col md:flex-row items-center justify-between gap-4">
             <p className="text-sm text-muted-foreground">© {new Date().getFullYear()} Payman Ahmadpour. All rights reserved.</p>
