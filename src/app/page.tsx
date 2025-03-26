@@ -224,7 +224,7 @@ export default function Home() {
                 <Mail className="h-5 w-5" />
               </a>
               <Link href="./Ahmadpour-Resume_CV.pdf">
-                <Button size="sm" className="hidden md:flex">
+                <Button size="sm" className="hidden hover:cursor-pointer md:flex">
                   Download CV
                 </Button>
               </Link>
@@ -518,7 +518,7 @@ export default function Home() {
                   </div>
                   <div className="flex-1">
                     <Link href="./Ahmadpour-Resume_CV.pdf">
-                      <Button className="w-full">
+                      <Button className="w-full hover:cursor-pointer">
                         Download Resume
                       </Button>
                     </Link>

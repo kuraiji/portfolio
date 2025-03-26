@@ -52,21 +52,22 @@ import {
 import type {Metadata} from "next";
 
 export const metadata: Metadata = {
-    title: "Portfolio - Payman Ahmadpour",
-    description: "Portfolio website created by Payman Ahmadpour",
+    title: "ポートフォリオ - Payman Ahmadpour",
+    description: "Payman Ahmadpourに作られたポートフォリオ・ウェブサイト",
 };
 
 const experiences = [
     {
         role: "XR Technical Artist",
         company: "Applied Medical",
-        period: "Sept 2021 - Jan 2025",
+        period: "９月2021年 - １月2025年",
         responsibilities: [
-            "Leading a small team of developers to create VR training simulations powered by Unreal Engine",
-            "Created and deployed core infrastructure to a VR training environment with C++ and Blueprints",
-            "Responsible for creating each training scenario and making sure it is true to reality with 95% accuracy",
-            "Built desktop/CLI tools in Typescript that's used for video tagging and archival",
-            "Established the version control system using Perforce"
+            "私が指導していた小さいチームはUnreal EngineでVR研修ソフトを開発しました。",
+            "全てのVRソフトを動かす再利用可能なC++ソースコードを作りました。",
+            "チームが使っている基礎的なブループリントクラスと関数を設けました。",
+            "それぞれの研修ソフトが現実感と同じなのかを確認する責任がありました。",
+            "動画にタグ付けをして保管と振り返りをしやすくするためのReactでのソフトとCLIツールを開発しました。",
+            "Perforceでバージョン管理システムを設けました。"
         ],
     },
 ]
@@ -74,7 +75,7 @@ const experiences = [
 const projects = [
     {
         title: "Kuraiji.me - E-commerce Platform",
-        description: "A full-featured online shopping platform",
+        description: "アマゾンみたいな買い物するウエブサイト",
         image: "./shopping.png",
         technologies: ["React", "Next.js", "Tailwind CSS", "AWS Gateway", "AWS Lambda", "Amazon DynamoDB"],
         demoLink: "https://www.kuraiji.me/",
@@ -82,14 +83,14 @@ const projects = [
     },
     {
         title: "Speedy Playlist Creator for Android",
-        description: "A speedy way to create playlists for your local music files.",
+        description: "音楽ファイルのために速くプレイリストを作る",
         image: "./music.png",
         technologies: ["Kotlin", "Android"],
         codeLink: "https://github.com/kuraiji/speedyplaylistcreatorandroid",
     },
     {
         title: "Ice Mage Adventures",
-        description: "A game about a young wizard's apprentice completing his training. This young apprentice must survive 15 tests, as well as defeat his master in magical combat before he is considered a true master of the arcane. Are you up to the task?",
+        description: "若い魔法使いの大冒険の始まり。魔法の玄人になる前に十五つの受験を生き延びて、師匠も倒さないといけません。",
         image: "./icemage.png",
         technologies: ["GDScript"],
         demoLink: "https://tripletrouble.itch.io/ice-mage-adventures",
@@ -99,14 +100,14 @@ const projects = [
 
 const skillCategories = [
     {
-        name: "Full Stack Development",
+        name: "フルスタック開発",
         skills: [
             ["HTML", <SiHtml5 key={"HTML"}/>],
             ["CSS", <SiCss key={"CSS"}/>],
             ["React", <SiReact key={"REACT"}/>],
             ["Next.js", <SiNextdotjs key={"NEXT"}/>],
             ["Tailwind CSS", <SiTailwindcss key={"TAIL"}/>],
-            ["Responsive Design"],
+            ["レスポンシブデザイン"],
             ["Node.js", <SiNodedotjs key={"NODE"}/>],
             ["RESTful APIs", <SiAmazonapigateway key={"API"}/>],
             ["Amazon DynamoDB", <SiAmazondynamodb key={"AmazonDynamoDB"}/>],
@@ -116,32 +117,32 @@ const skillCategories = [
         ],
     },
     {
-        name: "Software and Video Game Development",
+        name: "ソフトとゲーム開発",
         skills: [
             ["Unreal Engine", <SiUnrealengine key={"Unreal Engine"}/>],
             ["ASP.Net Core", <SiDotnet key={"ASP.Net Core"}/>],
             ["Unity", <SiUnity key={"Unity"}/>],
-            ["CLI Tooling", <SquareTerminal key={"CLI Tooling"}/>],
+            ["CLI ツール", <SquareTerminal key={"CLI Tooling"}/>],
             ["Electron", <SiElectron key={"Electron"}/>],
             ["Android", <SiAndroid key={"Android"}/>],
         ],
     },
     {
-        name: "DevOps, Cloud & Others",
+        name: "デブオプスとクラウドと他にも",
         skills: [
-            ["Leadership"],
+            ["指導"],
             ["Git", <SiGit key={"Git"}/>],
             ["GitHub", <SiGithub key={"GitHub"}/>],
             ["CI/CD"],
             ["Docker", <SiDocker key={"Docker"}/>],
             ["Perforce", <SiPerforce key={"Perforce"}/>],
-            ["Linux Server", <SiLinux key={"Linux"}/>],
-            ["Ubuntu Server", <SiUbuntu key={"Ubuntu"}/>],
+            ["Linuxサーバ", <SiLinux key={"Linux"}/>],
+            ["Ubuntuサーバ", <SiUbuntu key={"Ubuntu"}/>],
             ["Terraform", <SiTerraform key={"Terraform"}/>],
             ["Amazon Web Services", <SiAmazonwebservices key={"AmazonWebServices"}/>],
             ["AWS Lambda", <SiAwslambda key={"AWS Lambda"}/>],
-            ["Cloud Architecture"],
-            ["Cloud Infrastructure"]
+            ["クラウド設計"],
+            ["クラウド基盤"]
         ],
     },
 
@@ -153,23 +154,23 @@ const education = [
         institution: "University of California, Irvine",
         //period: "2019 - 2021",
         description:
-            "Coursework included Data Structures, Algorithms, Database Systems, and Object-Oriented Programming.",
+            "単位にはデータ構造とアルゴリズムとデータベースシステムと対象型プログラミングを含めた。",
     },
 ]
 
 const certificates = [
     {
-        name: "AWS Certified Solutions Architect – Associate",
+        name: "AWS 認定ソリューションアーキテクト - アソシエイト",
         issuer: "Amazon Web Services",
         date: "2025",
-        description: "Earners of this certification have a comprehensive understanding of AWS services and technologies. They demonstrated the ability to build secure and robust solutions using architectural design principles based on customer requirements. Badge owners are able to strategically design well-architected distributed systems that are scalable, resilient, efficient, and fault-tolerant.",
+        description: "コストとパフォーマンスが最適化されたソリューションの設計に重点を置いています。これは、AWS クラウドまたはオンプレミス IT での経験が豊富な受験者にとって理想的な出発点です。この試験にコーディングの深い実務経験は必要ありませんが、基本的なプログラミングの概念を熟知していると有利です。",
         credentialLink: "https://www.credly.com/badges/73699102-0cdf-4bb4-859b-72cf8ddc6a7a",
     },
 ]
 
 const spokenLanguages = [
-    { name: "English", proficiency: "Native" },
-    { name: "Japanese", proficiency: "Fluent" },
+    { name: "英語", proficiency: "ネイティブ" },
+    { name: "日本語", proficiency: "上級" },
 ]
 
 const programmingLanguages = [
@@ -192,22 +193,22 @@ export default function Home() {
                     <div className="font-bold text-xl ml-4">Payman Ahmadpour</div>
                     <nav className="hidden md:flex gap-6">
                         <a href="#experience" className="text-sm font-medium hover:text-primary transition-colors">
-                            Experience
+                            経験
                         </a>
                         <a href="#projects" className="text-sm font-medium hover:text-primary transition-colors">
-                            Projects
+                            プロジェクト
                         </a>
                         <a href="#languages" className="text-sm font-medium hover:text-primary transition-colors">
-                            Languages
+                            言語
                         </a>
                         <a href="#skills" className="text-sm font-medium hover:text-primary transition-colors">
-                            Skills
+                            能力
                         </a>
                         <a href="#education" className="text-sm font-medium hover:text-primary transition-colors">
-                            Education
+                            教育
                         </a>
                         <a href="#certificates" className="text-sm font-medium hover:text-primary transition-colors">
-                            Certificates
+                            資格
                         </a>
                         <Link href="/" className="text-sm font-medium hover:text-primary transition-colors">
                             English
@@ -223,9 +224,9 @@ export default function Home() {
                         <a href="mailto:paymanahmadpour@outlook.com" aria-label="Email">
                             <Mail className="h-5 w-5" />
                         </a>
-                        <Link href="./Ahmadpour-Resume_CV.pdf">
-                            <Button size="sm" className="hidden md:flex">
-                                Download CV
+                        <Link href="./Ahmadpour-Japan_Resume_CV.pdf">
+                            <Button size="sm" className="hidden hover:cursor-pointer md:flex ">
+                                履歴書をダウンロードする
                             </Button>
                         </Link>
                     </div>
@@ -235,9 +236,9 @@ export default function Home() {
                 {/* Hero Section */}
                 <section className="py-12 md:py-24 lg:py-32 flex flex-col md:flex-row items-center gap-8 md:gap-16">
                     <div className="flex-1 space-y-4">
-                        <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl">Hi, I&apos;m Payman Ahmadpour</h1>
+                        <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl">こんにちは、Payman Ahmadpourです。</h1>
                         <p className="text-xl text-muted-foreground">
-                            As a seasoned Full Stack and Software Developer with over three years of experience across various platforms, including desktop, mobile, web, and VR. I am now focused on transitioning into cloud infrastructure and development. My diverse background and problem-solving skills position me well to tackle new challenges in this evolving field.
+                            デスクトップとモバイルとウェブとVRを含めた複数の領域である3年以上経験を持っているフルスタックとソフト開発者です。クラウド基盤と開発に移行するのを集中しています。多様な履歴と問題解決能力のおかげでいつも変わっている業界にある新たな挑戦を扱えます。
                         </p>
                         <div className="flex flex-col sm:flex-row gap-3 pt-4">
                             <Button asChild>
@@ -264,7 +265,7 @@ export default function Home() {
                 <section id="experience" className="py-12 scroll-mt-20">
                     <div className="flex items-center gap-2 mb-8">
                         <Briefcase className="h-6 w-6 text-primary" />
-                        <h2 className="text-3xl font-bold tracking-tight">Experience</h2>
+                        <h2 className="text-3xl font-bold tracking-tight">経験</h2>
                     </div>
                     <div className="space-y-8">
                         {experiences.map((experience, index) => (
@@ -295,7 +296,7 @@ export default function Home() {
                 <section id="projects" className="py-12 scroll-mt-20">
                     <div className="flex items-center gap-2 mb-8">
                         <Code className="h-6 w-6 text-primary" />
-                        <h2 className="text-3xl font-bold tracking-tight">Projects</h2>
+                        <h2 className="text-3xl font-bold tracking-tight">プロジェクト</h2>
                     </div>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                         {projects.map((project, index) => (
@@ -352,12 +353,12 @@ export default function Home() {
                 <section id="languages" className="py-12 scroll-mt-20">
                     <div className="flex items-center gap-2 mb-8">
                         <Languages className="h-6 w-6 text-primary" />
-                        <h2 className="text-3xl font-bold tracking-tight">Languages</h2>
+                        <h2 className="text-3xl font-bold tracking-tight">言語</h2>
                     </div>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <Card>
                             <CardHeader>
-                                <CardTitle>Spoken Languages</CardTitle>
+                                <CardTitle>自然言語</CardTitle>
                             </CardHeader>
                             <CardContent>
                                 <ul className="space-y-2">
@@ -372,7 +373,7 @@ export default function Home() {
                         </Card>
                         <Card>
                             <CardHeader>
-                                <CardTitle>Programming Languages</CardTitle>
+                                <CardTitle>プログラミング言語</CardTitle>
                             </CardHeader>
                             <CardContent>
                                 <div className="flex flex-wrap gap-2">
@@ -393,7 +394,7 @@ export default function Home() {
                 <section id="skills" className="py-12 scroll-mt-20">
                     <div className="flex items-center gap-2 mb-8">
                         <Code className="h-6 w-6 text-primary" />
-                        <h2 className="text-3xl font-bold tracking-tight">Skills</h2>
+                        <h2 className="text-3xl font-bold tracking-tight">能力</h2>
                     </div>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                         {skillCategories.map((category, index) => (
@@ -421,7 +422,7 @@ export default function Home() {
                 <section id="education" className="py-12 scroll-mt-20">
                     <div className="flex items-center gap-2 mb-8">
                         <GraduationCap className="h-6 w-6 text-primary" />
-                        <h2 className="text-3xl font-bold tracking-tight">Education</h2>
+                        <h2 className="text-3xl font-bold tracking-tight">教育</h2>
                     </div>
                     <div className="space-y-6">
                         {education.map((edu, index) => (
@@ -448,7 +449,7 @@ export default function Home() {
                 <section id="certificates" className="py-12 scroll-mt-20">
                     <div className="flex items-center gap-2 mb-8">
                         <Award className="h-6 w-6 text-primary" />
-                        <h2 className="text-3xl font-bold tracking-tight">Certificates</h2>
+                        <h2 className="text-3xl font-bold tracking-tight">資格</h2>
                     </div>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                         {certificates.map((certificate, index) => (
@@ -479,9 +480,9 @@ export default function Home() {
                 <section id="contact" className="py-12 scroll-mt-20">
                     <Card>
                         <CardHeader>
-                            <CardTitle className="text-2xl">Get In Touch</CardTitle>
+                            <CardTitle className="text-2xl">話し合うね</CardTitle>
                             <CardDescription>
-                                Feel free to reach out if you&apos;re looking for a developer, have a question, or just want to connect.
+                                開発者を探すか聞きたいことがあるか話し合いたければ、話し合うね。
                             </CardDescription>
                         </CardHeader>
                         <CardContent>
@@ -517,9 +518,9 @@ export default function Home() {
                                     </div>
                                 </div>
                                 <div className="flex-1">
-                                    <Link href="./Ahmadpour-Resume_CV.pdf">
-                                        <Button className="w-full">
-                                            Download Resume
+                                    <Link href="./Ahmadpour-Japan_Resume_CV.pdf">
+                                        <Button className="w-full hover:cursor-pointer">
+                                            履歴書をダウンロードする
                                         </Button>
                                     </Link>
                                 </div>
