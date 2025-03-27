@@ -7,14 +7,10 @@ import React from "react";
 
 //relative z-10
 
-interface ButtonProps extends React.ComponentPropsWithoutRef<typeof Button> {
-
-}
-
 // Wrap the Button component with motion
 const MotionButton = motion(Button)
 //""
-export function GradientShift({className, variant, size, children} : ButtonProps) {
+export function GradientShift({className, variant, size, children} : React.ComponentPropsWithoutRef<typeof Button>) {
     return (
         <MotionButton
             className={`${className} w-28 text-white overflow-hidden relative`}
