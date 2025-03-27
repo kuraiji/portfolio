@@ -76,7 +76,7 @@ const experiences = [
 const projects = [
     {
         title: "Kuraiji.me - E-commerce Platform",
-        description: "アマゾンみたいな買い物するウエブサイト",
+        description: "アマゾンみたいな買い物するウエブサイトです。",
         image: "./shopping.png",
         technologies: ["React", "Next.js", "Tailwind CSS", "AWS Gateway", "AWS Lambda", "Amazon DynamoDB"],
         demoLink: "https://www.kuraiji.me/",
@@ -84,7 +84,7 @@ const projects = [
     },
     {
         title: "Speedy Playlist Creator for Android",
-        description: "音楽ファイルのために速くプレイリストを作る",
+        description: "音楽ファイルのために速くプレイリストを作れます。",
         image: "./music.png",
         technologies: ["Kotlin", "Android"],
         codeLink: "https://github.com/kuraiji/speedyplaylistcreatorandroid",
@@ -155,7 +155,7 @@ const education = [
         institution: "University of California, Irvine",
         //period: "2019 - 2021",
         description:
-            "単位にはデータ構造とアルゴリズムとデータベースシステムと対象型プログラミングを含めた。",
+            "単位にはデータ構造とアルゴリズムとデータベースシステムと対象型プログラミングを含めました。",
     },
 ]
 
@@ -473,7 +473,7 @@ export default function Home() {
                                             className="inline-flex items-center text-primary mt-2 hover:underline"
                                             target="_blank"
                                         >
-                                            View Credential <ChevronRight className="h-4 w-4" />
+                                            資格をみる <ChevronRight className="h-4 w-4" />
                                         </Link>
                                     )}
                                 </CardContent>
