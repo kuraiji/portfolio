@@ -50,6 +50,7 @@ import {
   SiSharp, SiAndroid
 } from '@icons-pack/react-simple-icons';
 import type {Metadata} from "next";
+import {GradientShift} from "@/components/attention-buttons";
 
 export const metadata: Metadata = {
   title: "Portfolio - Payman Ahmadpour",
@@ -319,16 +320,20 @@ export default function Home() {
                     <div className="p-6 pt-0 mt-auto">
                       <div className="flex gap-4">
                         {project.demoLink && (
-                            <Button variant="outline" size="sm" asChild>
-                              <a
-                                  href={project.demoLink}
-                                  target="_blank"
-                                  rel="noopener noreferrer"
-                                  className="flex items-center gap-1"
+                            <a
+                                href={project.demoLink}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className=""
+                            >
+                              <GradientShift
+                                  className="flex flex-row items-center gap-1 hover:cursor-pointer relative z-10"
+                                  size="sm"
                               >
-                                Demo <ArrowUpRight className="h-4 w-4" />
-                              </a>
-                            </Button>
+                                <p>Demo</p>
+                                <ArrowUpRight className="h-4 w-4" />
+                              </GradientShift>
+                            </a>
                         )}
                         {project.codeLink && (
                             <Button variant="outline" size="sm" asChild>
