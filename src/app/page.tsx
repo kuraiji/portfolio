@@ -28,7 +28,6 @@ import {
   SiNodedotjs,
   SiAmazonapigateway,
   SiPostgresql,
-  SiMongodb,
   SiApachecassandra,
   SiUnrealengine,
   SiDotnet,
@@ -47,7 +46,9 @@ import {
   SiC,
   SiCplusplus,
   SiKotlin,
-  SiSharp, SiAndroid
+  SiSharp,
+  SiAndroid,
+  SiRedis
 } from '@icons-pack/react-simple-icons';
 import type {Metadata} from "next";
 import {GradientShift} from "@/components/attention-buttons";
@@ -109,10 +110,11 @@ const skillCategories = [
       ["Tailwind CSS", <SiTailwindcss key={"TAIL"}/>],
       ["Responsive Design"],
       ["Node.js", <SiNodedotjs key={"NODE"}/>],
+      ["ASP.Net Core", <SiDotnet key={"ASP.Net Core"}/>],
       ["RESTful APIs", <SiAmazonapigateway key={"API"}/>],
       ["Amazon DynamoDB", <SiAmazondynamodb key={"AmazonDynamoDB"}/>],
       ["PostgreSQL", <SiPostgresql key={"PostgreSQL"}/>],
-      ["MongoDB", <SiMongodb key={"MongoDB"}/>],
+      ["Redis", <SiRedis key={"Redis"}/>],
       ["Apache Cassandra", <SiApachecassandra key={"ApacheCassandra"}/>],
     ],
   },
@@ -120,7 +122,6 @@ const skillCategories = [
     name: "Software and Video Game Development",
     skills: [
       ["Unreal Engine", <SiUnrealengine key={"Unreal Engine"}/>],
-      ["ASP.Net Core", <SiDotnet key={"ASP.Net Core"}/>],
       ["Unity", <SiUnity key={"Unity"}/>],
       ["CLI Tooling", <SquareTerminal key={"CLI Tooling"}/>],
       ["Electron", <SiElectron key={"Electron"}/>],
