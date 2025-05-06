@@ -60,7 +60,7 @@ export const metadata: Metadata = {
 
 const experiences = [
   {
-    role: "XR Technical Artist",
+    role: "VR Engineer",
     company: "Applied Medical",
     period: "Sept 2021 - Jan 2025",
     responsibilities: [
