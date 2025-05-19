@@ -80,7 +80,7 @@ const projects = [
         description: "アマゾンみたいな買い物するウエブサイトです。",
         image: "./shopping.png",
         technologies: ["React", "Next.js", "Tailwind CSS", "AWS Gateway", "AWS Lambda", "Amazon DynamoDB"],
-        demoLink: "https://www.kuraiji.me/",
+        demoLink: "https://crud-website-beta.vercel.app/",
         codeLink: "https://github.com/kuraiji/crud-website",
     },
     {
