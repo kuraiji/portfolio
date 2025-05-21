@@ -28,7 +28,6 @@ import {
   SiNodedotjs,
   SiAmazonapigateway,
   SiPostgresql,
-  SiApachecassandra,
   SiUnrealengine,
   SiDotnet,
   SiUnity,
@@ -48,7 +47,9 @@ import {
   SiKotlin,
   SiSharp,
   SiAndroid,
-  SiRedis
+  SiRedis,
+  SiGo,
+  SiFastapi
 } from '@icons-pack/react-simple-icons';
 import type {Metadata} from "next";
 import {GradientShift} from "@/components/attention-buttons";
@@ -83,11 +84,11 @@ const projects = [
     codeLink: "https://github.com/kuraiji/crud-website",
   },
   {
-    title: "Speedy Playlist Creator for Android",
-    description: "A speedy way to create playlists for your local music files.",
-    image: "./music.png",
-    technologies: ["Kotlin", "Android"],
-    codeLink: "https://github.com/kuraiji/speedyplaylistcreatorandroid",
+    title: "Tsugou.jp - Next-Generation Japanese Learning Tool",
+    description: "The easiest, efficient, and most convenient way to learn japanese. Contains both a advanced dictionary tool and flashcard system.",
+    image: "./tsugou.png",
+    technologies: ["Python", "FastAPI", "PostgresSQL", "Redis", "Docker", "React", "Next.js", "Tailwind CSS"],
+    demoLink: "https://tsugou.kuraiji.me",
   },
   {
     title: "Ice Mage Adventures",
@@ -111,11 +112,11 @@ const skillCategories = [
       ["Responsive Design"],
       ["Node.js", <SiNodedotjs key={"NODE"}/>],
       ["ASP.Net Core", <SiDotnet key={"ASP.Net Core"}/>],
+      ["FastAPI", <SiFastapi key={"FastAPI"}/>],
       ["RESTful APIs", <SiAmazonapigateway key={"API"}/>],
       ["Amazon DynamoDB", <SiAmazondynamodb key={"AmazonDynamoDB"}/>],
       ["PostgreSQL", <SiPostgresql key={"PostgreSQL"}/>],
       ["Redis", <SiRedis key={"Redis"}/>],
-      ["Apache Cassandra", <SiApachecassandra key={"ApacheCassandra"}/>],
     ],
   },
   {
@@ -183,7 +184,8 @@ const programmingLanguages = [
   ["C++", <SiCplusplus key={"C++"}/>],
   ["C", <SiC key={"C"}/>],
   ["Kotlin", <SiKotlin key={"Kotlin"}/>],
-  ]
+  ["Go", <SiGo key={"Go"}/>],
+]
 
 export default function Home() {
   return (
