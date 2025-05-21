@@ -85,7 +85,7 @@ const projects = [
   },
   {
     title: "Tsugou.jp - Next-Generation Japanese Learning Tool",
-    description: "The easiest, efficient, and most convenient way to learn japanese. Contains both a advanced dictionary tool and flashcard system.",
+    description: "The easiest, efficient, and most convenient way to learn japanese. Contains both an advanced dictionary tool and flashcard system.",
     image: "./tsugou.png",
     technologies: ["Python", "FastAPI", "PostgresSQL", "Redis", "Docker", "React", "Next.js", "Tailwind CSS"],
     demoLink: "https://tsugou.kuraiji.me",
