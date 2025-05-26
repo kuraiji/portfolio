@@ -241,7 +241,7 @@ export default function Home() {
             <div className="flex-1 space-y-4">
               <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl">Hi, I&apos;m Payman Ahmadpour</h1>
               <p className="text-xl text-muted-foreground">
-                As a seasoned Full Stack and Software Developer with over three years of experience across various platforms, including desktop, mobile, web, and VR. I am now focused on transitioning into cloud infrastructure and development. My diverse background and problem-solving skills position me well to tackle new challenges in this evolving field.
+                As a seasoned Full Stack and Software Developer with over three years of experience across various platforms, including desktop, mobile, web, and VR. My diverse background and problem-solving skills position me well to tackle new challenges in this evolving field.
               </p>
               <div className="flex flex-col sm:flex-row gap-3 pt-4">
                 <Button asChild>

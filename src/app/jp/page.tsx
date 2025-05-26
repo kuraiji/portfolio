@@ -243,7 +243,7 @@ export default function Home() {
                     <div className="flex-1 space-y-4">
                         <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl">こんにちは、Payman Ahmadpourです。</h1>
                         <p className="text-xl text-muted-foreground">
-                            デスクトップとモバイルとウェブとVRを含めた複数の領域である3年以上経験を持っているフルスタックとソフト開発者です。クラウド基盤と開発に移行するのを集中しています。多様な履歴と問題解決能力のおかげでいつも変わっている業界にある新たな挑戦を扱えます。
+                            デスクトップとモバイルとウェブとVRを含めた複数の領域である3年以上経験を持っているフルスタックとソフト開発者です。多様な履歴と問題解決能力のおかげでいつも変わっている業界にある新たな挑戦を扱えます。
                         </p>
                         <div className="flex flex-col sm:flex-row gap-3 pt-4">
                             <Button asChild>
