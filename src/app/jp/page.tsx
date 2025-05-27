@@ -49,7 +49,7 @@ import {
     SiAndroid,
     SiRedis,
     SiGo,
-    SiFastapi
+    SiFastapi, SiTruenas, SiQemu
 } from '@icons-pack/react-simple-icons';
 import type {Metadata} from "next";
 import {GradientShift} from "@/components/attention-buttons";
@@ -145,6 +145,8 @@ const skillCategories = [
             ["Terraform", <SiTerraform key={"Terraform"}/>],
             ["Amazon Web Services", <SiAmazonwebservices key={"AmazonWebServices"}/>],
             ["AWS Lambda", <SiAwslambda key={"AWS Lambda"}/>],
+            ["Hypervisor", <SiTruenas key={"Hypervisor"}/>],
+            ["Virtualization", <SiQemu key={"Virtualization"}/>],
             ["クラウド設計"],
             ["クラウド基盤"]
         ],
