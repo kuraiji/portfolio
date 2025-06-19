@@ -49,7 +49,9 @@ import {
   SiAndroid,
   SiRedis,
   SiGo,
-  SiFastapi, SiTruenas, SiQemu
+  SiFastapi,
+  SiTruenas,
+  SiQemu
 } from '@icons-pack/react-simple-icons';
 import type {Metadata} from "next";
 import {GradientShift} from "@/components/attention-buttons";
@@ -91,12 +93,12 @@ const projects = [
     demoLink: "https://tsugou.kuraiji.me",
   },
   {
-    title: "Ice Mage Adventures",
-    description: "A game about a young wizard's apprentice completing his training. This young apprentice must survive 15 tests, as well as defeat his master in magical combat before he is considered a true master of the arcane. Are you up to the task?",
-    image: "./icemage.png",
-    technologies: ["GDScript"],
-    demoLink: "https://tripletrouble.itch.io/ice-mage-adventures",
-    codeLink: "https://github.com/kuraiji/Triple-Trouble-LD41"
+    title: "Jidou",
+    description: "Automatically uses Terraform and Github Actions to create and destroy infrastructure hosted on AWS. Website should be available around 8:45 PM UTC+0 and closes around 9:25 PM.",
+    image: "./jidou.png",
+    technologies: ["Terraform", "CI/CD", "Github Actions", "Go", "Docker", "AWS EC2", "AWS ECS", "AWS DSQL"],
+    demoLink: "http://jidou.kuraiji.me",
+    codeLink: "https://github.com/kuraiji/Jidou"
   },
 ]
 
@@ -143,6 +145,9 @@ const skillCategories = [
       ["Terraform", <SiTerraform key={"Terraform"}/>],
       ["Amazon Web Services", <SiAmazonwebservices key={"AmazonWebServices"}/>],
       ["AWS Lambda", <SiAwslambda key={"AWS Lambda"}/>],
+      ["AWS EC2"],
+      ["AWS ECS"],
+      ["Github Actions"],
       ["Hypervisor", <SiTruenas key={"Hypervisor"}/>],
       ["Virtualization", <SiQemu key={"Virtualization"}/>],
       ["Cloud Architecture"],
