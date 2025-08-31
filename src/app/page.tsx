@@ -87,7 +87,7 @@ const projects = [
   },
   {
     title: "Tsugou.jp v2 - Next-Generation Japanese Learning Tool",
-    description: "The easiest, efficient, and most convenient way to learn japanese. Contains both an advanced dictionary tool and flashcard system. At the payment screen, use one of the test cards found here。https://docs.stripe.com/testing?testing-method=card-numbers#visa",
+    description: "The easiest, efficient, and most convenient way to learn japanese. Contains both an advanced dictionary tool and flashcard system. At the payment screen, use one of the test cards found here.https://docs.stripe.com/testing?testing-method=card-numbers#visa",
     image: "./tsugou2.png",
     technologies: ["Golang", "Echo", "PostgresSQL", "Valkey", "Python", "Docker", "React", "AWS", "Firebase", "Stripe", "Tailwind CSS"],
     demoLink: "https://tsugou.kuraiji.me",
