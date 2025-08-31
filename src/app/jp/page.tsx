@@ -85,11 +85,18 @@ const projects = [
         codeLink: "https://github.com/kuraiji/crud-website",
     },
     {
-        title: "Tsugou.jp - Next-Generation Japanese Learning Tool",
+        title: "Tsugou.jp v2 - Next-Generation Japanese Learning Tool",
+        description: "最先端の日本語勉強道具です。知らない単語を検索して、暗記で覚えられるようになる。クレジットカード入力画面のとき、それを参考してください。自分のカードを入力しないでください。https://docs.stripe.com/testing?testing-method=card-numbers#visa",
+        image: "./tsugou2.png",
+        technologies: ["Golang", "Echo", "PostgresSQL", "Valkey", "Python", "Docker", "React", "AWS", "Firebase", "Stripe", "Tailwind CSS"],
+        demoLink: "https://tsugou.kuraiji.me",
+    },
+    {
+        title: "Tsugou.jp v1 - Next-Generation Japanese Learning Tool",
         description: "最先端の日本語勉強道具です。知らない単語を検索して、暗記で覚えられるようになる。",
         image: "./tsugou.png",
         technologies: ["Python", "FastAPI", "PostgresSQL", "Redis", "Docker", "React", "Next.js", "Tailwind CSS"],
-        demoLink: "https://tsugou.kuraiji.me",
+        demoLink: "https://tsugouold.kuraiji.me",
     },
     {
         title: "Ice Mage Adventures",
@@ -118,7 +125,6 @@ const skillCategories = [
             ["Amazon DynamoDB", <SiAmazondynamodb key={"AmazonDynamoDB"}/>],
             ["PostgreSQL", <SiPostgresql key={"PostgreSQL"}/>],
             ["Redis", <SiRedis key={"Redis"}/>],
-
         ],
     },
     {
@@ -184,11 +190,11 @@ const programmingLanguages = [
     ["TypeScript", <SiTypescript key={"TypeScript"}/>],
     ["Python", <SiPython key={"Python"}/>],
     ["SQL"],
+    ["Go", <SiGo key={"Go"}/>],
     ["C#", <SiSharp key={"C#"}/>],
     ["C++", <SiCplusplus key={"C++"}/>],
     ["C", <SiC key={"C"}/>],
     ["Kotlin", <SiKotlin key={"Kotlin"}/>],
-    ["Go", <SiGo key={"Go"}/>],
 ]
 
 export default function Home() {
