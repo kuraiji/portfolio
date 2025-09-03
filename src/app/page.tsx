@@ -51,7 +51,7 @@ import {
   SiGo,
   SiFastapi,
   SiTruenas,
-  SiQemu
+  SiQemu, SiGooglecloud
 } from '@icons-pack/react-simple-icons';
 import type {Metadata} from "next";
 import {GradientShift} from "@/components/attention-buttons";
@@ -67,30 +67,29 @@ const experiences = [
     company: "Applied Medical",
     period: "Sept 2021 - Jan 2025",
     responsibilities: [
-      "Leading a small team of developers to create VR training simulations powered by Unreal Engine",
-      "Created and deployed core infrastructure to a VR training environment with C++ and Blueprints",
-      "Responsible for creating each training scenario and making sure it is true to reality with 95% accuracy",
-      "Built desktop/CLI tools in Typescript that's used for video tagging and archival",
-      "Established the version control system using Perforce"
+      "Led a small team to develop VR training software that reduced training costs by 35% and cut training accidents by over 90% by reinforcing fundamentals prior to live training",
+      "Developed core infrastructure for a VR training environment, reducing development time by 60% through streamlined workflows and widely reusable functions",
+      "Created realistic training scenarios with 95% accuracy by conducting on-site task observations and using them as references during development",
+      "Enhanced the outreach team’s tools with data analysis to track client product interests, boosting engagement by 40% across social media and tradeshows"
     ],
   },
 ]
 
 const projects = [
   {
-    title: "Kuraiji.me - E-commerce Platform",
-    description: "A full-featured online shopping platform",
-    image: "./shopping.png",
-    technologies: ["React", "Next.js", "Tailwind CSS", "AWS Gateway", "AWS Lambda", "Amazon DynamoDB"],
-    demoLink: "https://crud-website-beta.vercel.app/",
-    codeLink: "https://github.com/kuraiji/crud-website",
+    title: "Tsugou.jp v2 - Next-Generation Japanese Learning Tool",
+    description: "The easiest, efficient, and most convenient way to learn japanese. Contains both an advanced dictionary tool and flashcard system. At the payment screen, use one of the test cards found here. https://docs.stripe.com/testing?testing-method=card-numbers#visa",
+    image: "./tsugou2.png",
+    technologies: ["Golang", "Echo", "PostgresSQL", "Valkey", "Python", "Docker", "React", "AWS", "GCP", "Stripe", "Tailwind CSS"],
+    demoLink: "https://tsugou.kuraiji.me",
   },
   {
-    title: "Tsugou.jp v2 - Next-Generation Japanese Learning Tool",
-    description: "The easiest, efficient, and most convenient way to learn japanese. Contains both an advanced dictionary tool and flashcard system. At the payment screen, use one of the test cards found here.https://docs.stripe.com/testing?testing-method=card-numbers#visa",
-    image: "./tsugou2.png",
-    technologies: ["Golang", "Echo", "PostgresSQL", "Valkey", "Python", "Docker", "React", "AWS", "Firebase", "Stripe", "Tailwind CSS"],
-    demoLink: "https://tsugou.kuraiji.me",
+    title: "Jidou",
+    description: "Automatically uses Terraform and Github Actions to create and destroy infrastructure hosted on AWS. Website should be available around 8:45 PM UTC+0 and closes around 9:25 PM.",
+    image: "./jidou.png",
+    technologies: ["Terraform", "CI/CD", "Github Actions", "Go", "Docker", "AWS EC2", "AWS ECS", "AWS DSQL"],
+    demoLink: "http://jidou.kuraiji.me",
+    codeLink: "https://github.com/kuraiji/Jidou"
   },
   {
     title: "Tsugou.jp v1 - Next-Generation Japanese Learning Tool",
@@ -100,12 +99,12 @@ const projects = [
     demoLink: "https://tsugouold.kuraiji.me",
   },
   {
-    title: "Jidou",
-    description: "Automatically uses Terraform and Github Actions to create and destroy infrastructure hosted on AWS. Website should be available around 8:45 PM UTC+0 and closes around 9:25 PM.",
-    image: "./jidou.png",
-    technologies: ["Terraform", "CI/CD", "Github Actions", "Go", "Docker", "AWS EC2", "AWS ECS", "AWS DSQL"],
-    demoLink: "http://jidou.kuraiji.me",
-    codeLink: "https://github.com/kuraiji/Jidou"
+    title: "Kuraiji.me - E-commerce Platform",
+    description: "A full-featured online shopping platform",
+    image: "./shopping.png",
+    technologies: ["React", "Next.js", "Tailwind CSS", "AWS Gateway", "AWS Lambda", "Amazon DynamoDB"],
+    demoLink: "https://crud-website-beta.vercel.app/",
+    codeLink: "https://github.com/kuraiji/crud-website",
   },
 ]
 
@@ -151,6 +150,7 @@ const skillCategories = [
       ["Ubuntu Server", <SiUbuntu key={"Ubuntu"}/>],
       ["Terraform", <SiTerraform key={"Terraform"}/>],
       ["Amazon Web Services", <SiAmazonwebservices key={"AmazonWebServices"}/>],
+      ["Google Cloud Platform", <SiGooglecloud key={"GCP"}/>],
       ["AWS Lambda", <SiAwslambda key={"AWS Lambda"}/>],
       ["AWS EC2"],
       ["AWS ECS"],
@@ -168,7 +168,6 @@ const education = [
   {
     degree: "Bachelor of Sciences in Computer Science",
     institution: "University of California, Irvine",
-    //period: "2019 - 2021",
     description:
         "Coursework included Data Structures, Algorithms, Database Systems, and Object-Oriented Programming.",
   },
